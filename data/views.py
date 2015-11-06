@@ -17,6 +17,8 @@ from django.shortcuts import render_to_response
 
 def index(request):
     ISBN=0
+    ISBN=1
+    ISBN=0
     return render_to_response('index.html')
 
 def add(request):
