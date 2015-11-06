@@ -1,0 +1,51 @@
+<html>
+<head><title>searchauthor</title></head>
+<link rel="stylesheet" href="/static/normalize.css">
+<link rel="stylesheet" href="/static/style.css" media="screen" type="text/css" />
+
+<style type="text/css">
+    
+    .f{
+        position:absolute;
+        left:37%;
+        color: white;
+ }
+</style>
+<body>
+  <section class="webdesigntuts-workshop">
+    <p lign="centre" style="color:white">author search</p>
+    {% if error %}
+    <p style="color: red;">Search</p>
+    {% endif %}
+ <a class="f">   
+        {{aut}}
+        <br>
+        {{all}}
+        <br>
+        <table border="1" cellpadding="10" style="color:white;">
+    <tr>
+                <td align="center">ISBN</td>
+                <td align="center">Title</td>
+                <td align="center">AuthorID</td>
+                <td align="center">Publisher</td>
+                <td align="center">PublishDate</td>
+                <td align="center">Price</td>
+    </tr>
+        {%for ISBN, Title, AuthorID, Publisher, PublishDate, Price in autbook %}
+    <tr>
+                <td align="center">{{ISBN}}</td>
+                <td align="center">{{Title}}</td>
+                <td align="center">{{AuthorID}}</td>
+                <td align="center">{{Publisher}}</td>
+                <td align="center">{{PublishDate}}</td>
+                <td align="center">{{Price}}</td>
+            {% endfor %}
+    </tr>
+    </table>
+</a> 
+      <form method="" action ="http://icebook.sinaapp.com" style="top:40%">
+        <button  type="submit">Home</button>
+        </form>
+</section>
+</body>
+</html>

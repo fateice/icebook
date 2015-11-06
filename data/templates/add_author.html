@@ -1,0 +1,47 @@
+<html>
+<head><title>ADD</title>
+<link rel="stylesheet" href="/static/normalize.css">
+<link rel="stylesheet" href="/static/style.css" media="screen" type="text/css" />
+
+</head>
+
+<body>
+<section class="webdesigntuts-workshop">
+    <p class = "tit" lign="centre" style="color:white">Author ADD</p>
+    {% if iddd %}
+    <br>
+    <h1 lign="centre" style="color:white">There is no such author, please add.</h1>
+    {% endif %}
+    {% if error %}
+    <p style="color: red;">INPUT</p>
+    {% endif %}
+    <form action="http://icebook.sinaapp.com/add_author" method="get">
+        <table border="1" cellpadding="10">
+            <tr>
+                <td align="center">PRO</td>
+                <td align="center">INF</td>
+            </tr>
+            <tr>
+                <td align="right">AuthorID</td>
+                <td><input type="text" name="AuthorID" value = {{idd}}></td>
+            </tr>
+            <tr>
+                <td align="right">Name</td>
+                <td><input type="text" name="Name"></td>
+            </tr>
+            <tr>
+                <td align="right">Age</td>
+                <td><input type="text" name="Age" /></td>
+            </tr>
+            <tr>
+                <td align="right">Country</td>
+                <td><input type="text" name="Country" /></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="sub" style="width:80px;float:right" ></td>
+            </tr>
+        </table>
+    </form>
+</section>
+</body>
+</html>

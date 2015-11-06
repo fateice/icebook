@@ -1,0 +1,86 @@
+<html>
+<head>
+<title >Library</title>
+
+
+<link rel="stylesheet" href="static/normalize.css">
+
+
+<link rel="stylesheet" href="static/style.css" media="screen" type="text/css" />
+
+<style type="text/css">
+    b{
+    position:absolute;
+    left:1166px;
+    top:155px;
+    }
+    .bu1{
+    font-size: 9pt;
+    color: #003399;
+    border: 1px #003399 solid;
+    color: #006699;
+    border-bottom: #93bee2 1px solid;
+    border-left: #93bee2 1px solid;
+    border-right: #93bee2 1px solid;
+    border-top: #93bee2 1px solid;
+    background-color: #e8f4ff;
+    cursor: hand;
+    font-style: normal;
+    width: 100px;
+    height: 22px;
+    }
+
+    .se1{
+    position:relative;
+    left:42%;
+    }
+    .se2{
+    position:relative;
+    left:42%;
+    }
+
+</style>
+</head>
+
+<body>
+
+{{ content }}
+
+<b>
+<a href="http://icebook.sinaapp.com/add"><input type ="button" value = "Add" class = "bu1"></a>
+<br>
+<a href="http://icebook.sinaapp.com/add_author"><input type = "button" value ="Add author" class = "bu1"></a>
+<br>
+<a href="http://icebook.sinaapp.com/allbook"><input type = "button" value = "ALL books" class = "bu1"></a>
+<br>
+</b>
+
+<section class="webdesigntuts-workshop">
+
+<div>
+<p class = "tit" lign="centre" style="color:white">Library</p>
+<b>
+<a href="http://icebook.sinaapp.com/add"><input type ="button" value = "Add" class = "bu1"></a>
+<br>
+<a href="http://icebook.sinaapp.com/add_author"><input type = "button" value ="Add author" class = "bu1"></a>
+<br>
+<a href="http://icebook.sinaapp.com/allbook"><input type = "button" value = "ALL books" class = "bu1"></a>
+<br>
+</b>
+</div>
+
+	<form action="http://icebook.sinaapp.com/searchbook" method="GET">		    
+		<input type="text" name="TitleIN" placeholder="Title">		    	
+		<button>Search</button>
+	</form>
+
+
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+    	<form action="http://icebook.sinaapp.com/searchauthor" method="GET" >		    
+		<input type="text" name="authorIN" placeholder="Author Name">		    	
+		<button>Search</button>
+	</form>
+
+</section>
+</body>
+</html>
